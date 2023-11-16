@@ -1,0 +1,131 @@
+#login,#signup {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/webImage2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--light-blue);
+}
+#login p a,#signup p a {
+  color: var(--orange);
+}
+
+ .form {
+  border: 1.5px solid var(--dark-green);
+  padding: 1rem;
+  width: 80%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 5px 15px var(--light-green);
+  background: rgba(0,0,0,.5);
+  backdrop-filter: grayscale(50%);
+}
+
+ .form >* {
+  margin-bottom: 1rem;
+}
+ form legend {
+  font-weight: 500;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.form-input input {
+  width: 100%;
+  height: 2.2rem;
+  border: 2px solid var(--light-gray);
+  border-radius: 5px;
+  font-size: 1.1rem;
+  background-color: var(--light-gray);
+  color: rgba(0,0,0,0.6);
+
+}
+.form-input input:hover, .form-input input:focus {
+  outline: none;
+  border: 2px solid #7e7e7e;
+}
+.form-group label {
+  font-weight: 500;
+}
+
+.form-button button {
+  text-align: center;
+  width: 100%;
+  padding:.5rem;
+  margin: 1rem auto;
+  border: 1px solid var(--dark-green);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: var(--white);
+  font-weight: 500;
+  background-color: var(--dark-green);
+}
+.form-button button:hover, .form-button button:active {
+  background-color: var(--light-green);
+  border: 1px solid var(--light-green);
+}
+#login,#signup {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+ .form {
+  border: 1.5px solid var(--dark-green);
+  padding: 1rem;
+  width: 80%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+ .form >* {
+  margin-bottom: 1rem;
+}
+ form legend {
+  font-weight: 500;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.form-input input {
+  width: 100%;
+  height: 2.2rem;
+  border: 2px solid var(--light-gray);
+  border-radius: 5px;
+  font-size: 1.1rem;
+
+}
+.form-input input:hover, .form-input:focus {
+  outline: none;
+  border: 2px solid #7e7e7e;
+}
+.form-group label {
+  font-weight: 500;
+}
+
+.form-button button {
+  text-align: center;
+  width: 100%;
+  padding:.5rem;
+  margin: 1rem auto;
+  border: 1px solid var(--dark-green);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: var(--dark-green);
+}
+.form-button button:hover, .form-button button:active {
+  background-color: var(--light-green);
+  border: 1px solid var(--light-green);
+}
+

@@ -1,0 +1,54 @@
+<section id="home">
+  <header class="header">
+    <figure class="profile-img">
+      <img src="/images/tennisball.svg" alt="dummy profile image" >
+    </figure>
+    <h1>Hello, {{user}}</h1>
+  </header>
+  <section class="main">
+    <form name="search" id="search">
+      <input type="search"
+	     name="username"
+	     placeholder=" github profile username"
+	     >
+   </form>
+  {{#if additionalInfo}}
+   <section  class="profile-info">
+    <div class="basic-info">
+      {{#if src}}
+      <figure>
+	<img src="{{src}}" alt="profile img">
+      </figure>
+      {{/if}}
+      <div class="primary-info">
+	{{#if name}}
+	<div class="names">
+	  <span class="name"> {{name}}</span>
+	  <span class"login">@{{login}}</span>
+	</div>
+	<div class="popularity">
+	  <span class="followers"> <span class="num">{{followers}}</span> followers</span>
+	  <span class="following"> <span class="num">{{following}}</span> following</span>
+	</div>
+	<div class="repos">
+	  <span class="public-repos"><span class="num">{{publicRepos}}</span> public repositories</span>
+	</div>
+	{{/if}}
+      </div>
+    </div>
+    <div class="additional-info">
+      <p class="bio">{{bio}}</p>
+      <aside>
+      {{#each additionalInfo}}
+      <p class="{{className}}"><a href={{href}} target="_blank"><i class="{{icon}}"></i>  {{value}}</a></p>
+      {{/each}}
+      {{#if location}}
+      <p class="location"><i class="fa fa-location"></i> {{location}}</p>
+      {{/if}}
+      </aside>
+    </div>
+  </section>
+{{/if}}
+</section>
+</section>
+<script src="/js/home.js" type="module"></script>

@@ -1,0 +1,197 @@
+:root {
+  box-sizing: border-box;
+  font-size: 13px;
+  font-family: "Kumbh sans",Inter,georgia;
+  --light: #edecec;
+  --light-gray: #e7e6e6;
+  --dark-green: #1e8e52;
+  --light-green: #209556;
+  --light-blue: #26bbf6;
+  --orange: #f1b000;
+  --white: #fff;
+  -webkit-text-size-adjust: none;
+  line-height: 1;
+}
+
+*,*::before,*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+#home {
+  /*border: 5px solid red;*/
+  min-height: 100vh;
+  background-image: url("/images/webImage1.jpg");
+  background-size: contain;
+  color: var(--white);
+}
+.header {
+  display: flex;
+  /*border: 1px solid green;*/
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem .4rem;
+  margin-bottom: 1rem;
+}
+.header figure {
+  margin-right: 1rem;
+  width: 3rem;
+  border: 2px solid var(--light-gray);
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header h1 {
+  font-size: 1.2rem;
+  color: var(--light-blue);
+}
+
+.main {
+ /* border: 1px solid var(--dark-green);*/
+  padding: .4rem;
+}
+#search {
+  width: 90%;
+  margin:1rem  auto;
+
+}
+#search input {
+  width: 100%;
+  height: 2.2rem;
+  border: 2px solid var(--light);
+  border-radius: 5px;
+  font-size: 1.1rem;
+  background-color: var(--light-gray);
+}
+
+#search input:hover, #search input:focus {
+  outline: none;
+  border: 2px solid var(--light-gray);
+}
+.profile-info {
+  border: 2px solid var(--light-blue);
+  margin-top: 8rem;
+  border-radius: 10px;
+  box-shadow: 1px 2px 4px var(--light-blue);
+/*  background-color: rgba(255,255,255,.2);*/
+  backdrop-filter: blur(25px);
+  padding: .5rem;
+}
+.basic-info {
+  display: flex;
+  align-items: flex-end;
+  /*border: 1px solid red;*/
+  margin: 1rem 0;
+
+}
+.basic-info figure {
+  width: 150px;
+  border: 2px solid var(--light-blue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-right: 4px;
+}
+.primary-info {
+  /*border: 1px solid blue;*/
+  flex-grow: 1;
+  padding: .4rem;
+
+}
+.primary-info .names {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 2.5px;
+}
+.primary-info .popularity {
+  display: flex;
+  align-items: center;
+}
+.name {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+ .followers  {
+  margin-right: 1rem;
+}
+
+.num {
+  font-weight: 500;
+  font-style: none;
+}
+
+.additional-info {
+  padding: .5rem;
+  margin: 2rem 0;
+  /*border: 1px solid red;*/
+  display: grid;
+  grid: auto / 1fr max-content;
+  grid-gap: .5rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio {
+  border-top: 2px solid var(--light-blue);
+  text-align: justify;
+  padding:1rem .5rem .5rem;
+  position: relative;
+}
+.bio::before {
+  content: " About ";
+  position: absolute;
+  top: -15px;
+ /* border-top: 2px solid orange;*/
+  background-color: var(--light-blue);
+  color: white;
+  padding: 0.1rem  1rem;
+  border-radius: 8px;
+  text-align: center;
+
+}
+.additional-info aside {
+  position: relative;
+  align-self: end;
+  border-bottom: 2px solid var(--light-blue);
+  padding: .5rem;
+}
+
+.additional-info aside::after {
+  content: "Connect";
+  border: 1px solid var(--light-blue);
+  position: absolute;
+  bottom: -15px;
+  text-align: center;
+  background-color: var(--light-blue);
+  color: white;
+  padding: .1rem 1rem;
+  border-radius: 8px;
+  right: .5rem;
+
+}
+
+.location {
+  margin-bottom: 1rem;
+}
+
+.additional-info aside a {
+  text-decoration: none;
+  margin-bottom: 5px;
+  padding: .5rem 0;
+  color: var(--light-blue);
+}
